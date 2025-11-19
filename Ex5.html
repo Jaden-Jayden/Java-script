@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercice 5</title>
+		<style>
+			button {
+				cursor: pointer;
+				padding: 12px 24px;
+				border: thin solid white;
+				border-radius: 8px;
+				color: white;
+			}
+
+			.red {
+				background-color: red;
+			}
+
+			.blue {
+				background-color: blue;
+			}
+
+			.green {
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<button id="1" class="red">Rouge</button>
+			<button id="2" class="blue">Bleu</button>
+			<button id="3" class="green">Vert</button>
+		</main>
+		<script>
+			const secret = document.querySelector("#1");
+			const body = document.body;
+
+			body.addEventListener("click", () => {
+				body.style.backgroundColor = "red";
+			});
+		</script>
+	</body>
+</html>
