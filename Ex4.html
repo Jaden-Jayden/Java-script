@@ -17,10 +17,12 @@
 	<body>
 		<button id="btn">Change color !</button>
 		<script>
-			const secret = document.querySelector("#btn");
+			const btn = document.querySelector("#btn");
 			const body = document.body;
+			
 
-			secret.addEventListener("click", () => {
+
+			btn.addEventListener("click", () => {
 				body.style.backgroundColor = "blue";
 			});
 		</script>
